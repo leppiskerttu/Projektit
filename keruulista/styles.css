@@ -1,0 +1,40 @@
+body {
+    background-color: bisque;
+}
+
+table {
+    width: 100%;
+    border: 6px solid;
+    border-collapse: collapse;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    background-color: lightslategrey;
+}
+
+th {
+    text-align: center;
+    border: 4px solid;
+    border-collapse: collapse;
+    height: 75px;
+    font-size: 25px;
+}
+
+td {
+    text-align: center;
+    border: 2px solid;
+    border-collapse: collapse;
+    height: 25px;
+}
+
+input[type=button] {
+    height: 50px;
+    width: 33%;
+    background-color: lightblue;
+}
+
+.kommentti {
+    border: 5px solid;
+    font-size: 20px;
+    text-align: center;
+    background-color: lightblue;
+}

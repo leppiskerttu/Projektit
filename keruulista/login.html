@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1024, initial-scale=1, minimum-scale: 1, maximum-scale: 1">
+    <title>Document</title>
+    <style>
+    .centre {
+        height: 200px;
+        width: 400px;
+        
+
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -100px;
+        margin-left: -200px;
+}
+    </style>
+</head>
+<body style="background-color: bisque;">
+<div class="centre">
+    <input type="text" id="username" name="usertextbox">
+    <label for="usertextbox">Käyttäjänimi</label><br><br>
+    <input type="password" id="password" name="passtextbox">
+    <label for="passtextbox">Salasana</label><br><br>
+    <input type="button" value="Kirjaudu" onclick="logInButton()">
+    <p id="logintxt">Try testuser and testpass</p>
+    <script src="keruulista.js"></script>
+</div>
+</body>
+</html>

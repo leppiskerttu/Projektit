@@ -1,0 +1,49 @@
+Lisäsin login ominaisuuden, joka tallentaa käyttäjänimen sessionStorageen
+Käyttäjätiedot on JSON muodosssa keruulista.js tiedostossa
+Yksi käyttäjä on testuser ja testpass
+Käytin window.location.replace toiselle html sivulle siirtymiseen login sivulta (ei voi siirtyä edelliseen sivuun)
+window.location.href voi siirtyä edelliseen (sivuston sisällä?) en oo 100% varma mitä pitäs käyttää
+en oo myöskään varma html tiedostojen ja js tiedostojen jakamisesta osiin
+
+
+
+
+
+Hakukone
+
+Toi hakukoneen autofilli on buginen
+vaikka kirjottaa 157 ja painaa siitä niin tulee 1234 mutta ainakin se näyttää
+
+
+
+Haku.Html
+rivillä 41 on 
+<form action="tilaukset1.html"> 
+vaihtakaa toi nimi siihen mihin haluatte että se tieto lähtee.
+
+
+  <script>        
+    function passvalues()
+    {       
+        var Ordernumber=document.getElementById("search").value;
+        localStorage.setItem("number",Ordernumber);
+        return false;
+  
+    }
+  </script>
+
+ 
+toi on se funktio jolla se tieto lähtee 
+
+
+sitten sinne toiseen htmllään mihin haluat että se tieto menee niin
+eli vastaanottavaan päähän
+
+<span id="result"> näyttää sen numeron
+
+sitten scripteihin
+
+    <script>
+document.getElementById("result").innerHTML=localStorage.getItem("number");
+
+    </script>

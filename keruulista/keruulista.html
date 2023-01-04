@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1024, initial-scale=1, minimum-scale: 1, maximum-scale: 1">
+    <title>Document</title>
+    <style>
+.float-parent-element { 
+    width: 50%; 
+} 
+.float-child-element { 
+    float: left; 
+    width: 50%; 
+} 
+.red { 
+    background-color: lightslategrey; 
+    margin-left: 50%; 
+    height: 100px; 
+    width: 200px;
+    margin: 50;
+} 
+.yellow { 
+    background-color: lightslategray; 
+    margin-left: 50%; 
+    height: 100px; 
+    width: 200px;
+    
+}
+    </style>
+</head>
+<body onload="test()" style="background-color: bisque;">
+    <p id="teksti">Tervetuloa sivustolle.</p>
+    <input type="button" value="Kirjaudu ulos" onclick="logOutButton()"><br><br><br><br>
+    
+    <div class="float-parent-element">
+        <div class="float-child-element">
+          <div class="red">
+              <input type="button" value="Tilaukset" onclick="vieTilausSivulle()" style="font-size: 20px; width: 100%; height: 100px;"><br><br><br><br>
+              <input type="button" value="Valmiit tilaukset" onclick="vieValmiitTilausSivulle()">
+          </div>
+        </div>
+        <div class="float-child-element">
+          <div class="yellow">
+              <!--<input type="text" style="width: 180px;"><br>
+              <input type="button" value="Hae tilaus">-->
+              <input type="button" value="Tilaushaku" onclick="vieHakuun()">
+          </div>
+        </div>
+    </div>
+    
+    <script src="keruulista.js"></script>
+</body>
+</html>

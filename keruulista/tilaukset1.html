@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+    tilaukset <span id="result">
+    </body>
+    <p>Tämä on tilaussivu.</p>
+    <input type="button" value="Nouda" onclick="noudaTilaukset()">
+    <p id="taulukko"></p> 
+    <script>
+document.getElementById("result").innerHTML=localStorage.getItem("number");
+
+    </script>
+</body>
+</html>
